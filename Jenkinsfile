@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage('stage 1') {
       steps {
+        echo 'I am a ${BUZZ_NAME}'
         sh 'env | sort'
       }
     }
@@ -25,5 +26,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    BUZZ_NAME = 'Worker Bee'
   }
 }
