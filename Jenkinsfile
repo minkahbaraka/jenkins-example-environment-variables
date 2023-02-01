@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('New Branch Test') {
+      steps {
+        echo 'This is a new branch!'
+      }
+    }
+
   }
 }
