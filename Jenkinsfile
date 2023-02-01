@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('Print Message 2') {
+      steps {
+        echo 'Bees Buzz Buzz!'
+      }
+    }
+
   }
 }
