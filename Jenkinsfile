@@ -6,5 +6,12 @@ pipeline {
         sh 'env | sort'
       }
     }
+
+    stage('Print Message') {
+      steps {
+        echo 'Bees Buzz!'
+      }
+    }
+
   }
 }
